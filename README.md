@@ -54,3 +54,12 @@ Admin Settings → Plugins → เพิ่ม marketplace นี้ → แจ�
 | endpoint | `GET /.well-known/oauth-authorization-server` · `GET /.well-known/oauth-protected-resource` · `POST /oauth/register` · `GET/POST /oauth/authorize` · `POST /oauth/token` · `POST /oauth/revoke` · `POST /mcp` |
 
 รายละเอียดเต็ม: `Clinic-APP/_meta/mcp-server-claude-plugin-2026-09-24.md`
+
+## เวอร์ชัน
+
+| version | วันที่ | เปลี่ยนอะไร |
+|---|---|---|
+| 1.1.0 | 2026-09-24 | เพิ่มชุด "วิเคราะห์ธุรกิจ" 7 tool (`sales_by_category` · `best_sellers` · `staff_earnings` · `appointment_summary` · `revenue_by_period` · `payment_summary` · `outstanding_balances`) + กติกาการอ่านผลใน SKILL.md · ต้องใช้กับ `shopapiv2` ที่ deploy ≥ 2026-09-24 |
+| 1.0.0 | 2026-09-24 | เวอร์ชันแรก 24 tool อ่านอย่างเดียว + OAuth ผ่านหน้า login ของ APSX |
+
+> ลูกค้าที่ติดตั้ง plugin ไว้แล้ว: `claude plugin update apsx-clinic` (หรือถอน/ติดตั้งใหม่) เพื่อรับ SKILL.md ใหม่ · ผู้ใช้ claude.ai connector ไม่ต้องทำอะไร แค่ Reconnect ให้โหลดรายการ tool ใหม่
