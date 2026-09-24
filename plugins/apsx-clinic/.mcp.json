@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "apsx-clinic": {
+      "type": "http",
+      "url": "${APSX_MCP_URL:-https://shopv2.api-apsx.com/mcp}",
+      "oauth": {
+        "scopes": "clinic:read"
+      },
+      "timeout": 60000
+    }
+  }
+}

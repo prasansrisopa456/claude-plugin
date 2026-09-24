@@ -1,0 +1,12 @@
+{
+  "name": "apsx-clinic",
+  "version": "1.0.0",
+  "description": "APSX Platform — ถามข้อมูลคลินิกของคุณจาก Claude (คิว นัดหมาย ลูกค้า บิล ยอดขาย สต๊อก) ต้องล็อกอินบัญชีโปรแกรมคลินิกก่อน · อ่านอย่างเดียว",
+  "author": {
+    "name": "APSTH Co., Ltd.",
+    "url": "https://www.apsth.com"
+  },
+  "homepage": "https://www.apsth.com",
+  "license": "Proprietary",
+  "keywords": ["clinic", "apsx", "apsth", "healthcare", "thai", "mcp", "oauth"]
+}

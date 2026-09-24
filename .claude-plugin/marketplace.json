@@ -1,0 +1,26 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "apsx-platform",
+  "description": "Plugins สำหรับลูกค้าโปรแกรมคลินิก APSX Platform (APSTH) — เชื่อม Claude กับข้อมูลคลินิกของคุณผ่านการล็อกอินบัญชีคลินิก",
+  "owner": {
+    "name": "APSTH Co., Ltd.",
+    "url": "https://www.apsth.com"
+  },
+  "metadata": {
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "apsx-clinic",
+      "source": "./plugins/apsx-clinic",
+      "displayName": "APSX Platform — Clinic",
+      "description": "ถามข้อมูลคลินิกของคุณจาก Claude (คิว นัดหมาย ลูกค้า บิล ยอดขาย สต๊อก) — ต้องล็อกอินบัญชีโปรแกรมคลินิกก่อน อ่านอย่างเดียว",
+      "version": "1.0.0",
+      "category": "productivity",
+      "tags": ["clinic", "apsx", "apsth", "thai", "healthcare", "mcp"],
+      "author": { "name": "APSTH Co., Ltd." },
+      "homepage": "https://www.apsth.com",
+      "strict": true
+    }
+  ]
+}
