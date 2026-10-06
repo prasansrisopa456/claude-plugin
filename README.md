@@ -45,16 +45,6 @@ Settings → Connectors → **Add custom connector** → ใส่ URL `https://
 Admin Settings → Plugins → เพิ่ม marketplace นี้ → แจกให้สมาชิกใน org ได้เอง
 (หน้า "Create a plugin" ใน claude.ai แจกได้เฉพาะคนใน org เดียวกัน — ลูกค้าคนละ org ต้องใช้ marketplace)
 
-## ฝั่ง server ต้องมีอะไร
-
-| อย่าง | ค่า |
-|---|---|
-| migration | 253 (`clinic_main_x`) + 254 (`clinic_log_x`) **ก่อน deploy** |
-| env | `MCP_ISSUER_URL=https://shopv2.api-apsx.com` (URL สาธารณะ · ไม่ตั้ง = เดาจาก Host header) · `MCP_ACCESS_TTL_MIN` (default 60) · `MCP_REFRESH_TTL_HOURS` (default 720) |
-| endpoint | `GET /.well-known/oauth-authorization-server` · `GET /.well-known/oauth-protected-resource` · `POST /oauth/register` · `GET/POST /oauth/authorize` · `POST /oauth/token` · `POST /oauth/revoke` · `POST /mcp` |
-
-รายละเอียดเต็ม: `Clinic-APP/_meta/mcp-server-claude-plugin-2026-09-24.md`
-
 ## เวอร์ชัน
 
 | version | วันที่ | เปลี่ยนอะไร |
